@@ -1,7 +1,14 @@
 import pandas as pd
 import os
 
+#Preenche valores vazios no dataset
 def data_cleaner(data_folder: str) -> list:
+    '''
+    Abre os arquivos .xlsx dentro da pasta e preenche os valores vazios
+
+        input: Diretório da pasta com arquivos .xlsx
+        output: Lista de DataFrames
+    '''
     try:
         data = []
         dir = os.listdir(data_folder)
@@ -16,8 +23,15 @@ def data_cleaner(data_folder: str) -> list:
     except FileNotFoundError as e:
         print(e)
         return False
-    
+
+#Filtra pela coluna 'zone_name' e ordena pela colunas 'kilometer'
 def get_elegible(data_folder: str) -> list:
+    '''
+    Os dataframes são criados apenas com os valores 'Pare na Rua' e ordena pela coluna 'kilometer'
+
+        input: Diretório da pasta com arquivos.xlsx
+        output: Lista de DataFrames
+    '''
     try:
         data = data_cleaner(data_folder)
         elegible_data = []
@@ -30,8 +44,14 @@ def get_elegible(data_folder: str) -> list:
         print(e)
         return False
 
-
+#Cria arquivos .xlsx baseado no retorno da função 'get_eligible'
 def write_new_files(data_folder: str) -> bool:
+    '''
+    Cria arquivos .xlsx baseado no retorno da função 'get_eligible'.
+
+        input: Diretório da pasta com arquivos.xlsx
+        output: Booleano, True para sucesso e False para falha
+    '''
     try:
         data_list = get_elegible(data_folder)
         for i, df in enumerate(data_list):
@@ -41,7 +61,14 @@ def write_new_files(data_folder: str) -> bool:
         print(e)
         return False
 
+#Renomeia os arquivos baseado nos arquivos .xlsx originais
 def rename_files(folder1: str, folder2: str) -> bool:
+    '''
+    Renomeia os arquivos baseado nos arquivos .xlsx originais.
+
+        input: Diretório 1 e Diretório 2
+        output: Booleano, True para sucesso e False para falha
+    '''
     try:
         files1 = os.listdir(folder1)
         files2 = os.listdir(folder2)
