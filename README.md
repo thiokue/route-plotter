@@ -27,3 +27,14 @@ Ao avaliar a sua solução, tenha certeza de ter respondido às seguintes quest�
     2. A minha solução garante que o verso saberá exatamente onde encontrar os veículos a serem abastecidos e que ordem ele deve seguir para ir até o local onde cada automóvel está?
 
     3. A minha solução é boa para o cliente, para a Versa e para o nosso colaborador (verso) responsável pela operação? Como você metrifica isso?
+
+
+
+
+## Duvidas
+
+A coluna kilometro é o quanto o carro tem de kilometros rodados totais, ou o quanto ele rodou com esse tanque ?
+
+A zone_name Pare na Rua são os carros elegiveis para o abastescimento ?
+
+
