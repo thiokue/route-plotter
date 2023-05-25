@@ -11,6 +11,9 @@ def extrair_arquivos(zip_dir: str):
                 if file.endswith('.xlsx'):
                     zip_ref.extract(file)
             return True
+    except FileNotFoundError as e:
+        print(e)
+        return False
     except FileExistsError as e:
         print(e)
         return False
@@ -26,5 +29,8 @@ def remover_arquivos(folder_dir: str):
     except FileNotFoundError as e:
         print(e)
         return False
+    except FileExistsError as e:
+        print(e)
+        return False
 
-extrair_arquivos('Planilhas de Dados.zip')
+
