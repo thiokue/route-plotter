@@ -23,7 +23,7 @@ def extrair_arquivos(zip_dir: str) -> bool:
         print(e)
         return False
 
-#Funcão para remover os arquivos utilizados
+# Funcão para remover os arquivos utilizados
 def remover_arquivos(folder_dir: str) -> bool:
     '''
     Remove os arquivos .xlsx do diretório especificado.

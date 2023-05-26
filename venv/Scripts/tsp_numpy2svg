@@ -1,0 +1,3 @@
+#!C:\Users\Thiago\Documents\GitHub\teste-versafuel\venv\Scripts\python.exe
+from tsp_solver.demo import numpy2svg
+numpy2svg.main()

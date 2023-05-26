@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+from geopy.geocoders import Nominatim
 
 #Preenche valores vazios no dataset
 def data_cleaner(data_folder: str) -> list:
@@ -38,7 +39,9 @@ def get_elegible(data_folder: str) -> list:
         for df in data:
             elegible_df = df[df['zone_name'] == 'Pare na Rua']
             elegible_df = elegible_df.sort_values(by='kilometer', ascending=False)
-            elegible_data.append(elegible_df[:40])
+            elegible_df = elegible_df.head(40)
+            elegible_df['adress'] = elegible_df.apply(lambda row: get_location(row['latitude'], row['longitude']), axis=1)
+            elegible_data.append(elegible_df)
         return elegible_data
     except Exception as e:
         print(e)
@@ -83,3 +86,13 @@ def rename_files(folder1: str, folder2: str) -> bool:
     except FileNotFoundError as e:
         print(e)
         return False
+
+def get_location(latitude, longitude):
+    geolocator = Nominatim(user_agent="my-app")
+    location = geolocator.reverse((latitude, longitude), exactly_one=True, timeout=None)
+    return location.address
+
+# if write_new_files('Planilhas de Dados'):
+#     rename_files('Planilhas de Dados', 'Rotas')
+# else:
+#     print('não')
