@@ -1,6 +1,8 @@
 import pandas as pd
 import os
 from geopy.geocoders import Nominatim
+from loguru import logger
+from tqdm import tqdm
 
 #Preenche valores vazios no dataset
 def data_cleaner(data_folder: str) -> list:
@@ -19,10 +21,10 @@ def data_cleaner(data_folder: str) -> list:
             data.append(df)
         return data
     except FileExistsError as e:
-        print(e)
+        logger.error(e)
         return False
     except FileNotFoundError as e:
-        print(e)
+        logger.error(e)
         return False
 
 #Filtra pela coluna 'zone_name' e ordena pela colunas 'kilometer'
@@ -36,7 +38,7 @@ def get_elegible(data_folder: str) -> list:
     try:
         data = data_cleaner(data_folder)
         elegible_data = []
-        for df in data:
+        for df in tqdm(data):
             elegible_df = df[df['zone_name'] == 'Pare na Rua']
             elegible_df = elegible_df.sort_values(by='kilometer', ascending=False)
             elegible_df = elegible_df.head(40)
@@ -44,7 +46,7 @@ def get_elegible(data_folder: str) -> list:
             elegible_data.append(elegible_df)
         return elegible_data
     except Exception as e:
-        print(e)
+        logger.error(e)
         return False
 
 #Cria arquivos .xlsx baseado no retorno da função 'get_eligible'
@@ -61,7 +63,7 @@ def write_new_files(data_folder: str) -> bool:
             df.to_excel(f'./Rotas/Rota_{i+1}.xlsx', index=False)
         return True 
     except Exception as e:
-        print(e)
+        logger.error(e)
         return False
 
 #Renomeia os arquivos baseado nos arquivos .xlsx originais
@@ -81,18 +83,13 @@ def rename_files(folder1: str, folder2: str) -> bool:
             os.rename(file2_path, os.path.join(folder2, new_file_name))
         return True
     except FileExistsError as e:
-        print(e)
+        logger.error(e)
         return False
     except FileNotFoundError as e:
-        print(e)
+        logger.error(e)
         return False
 
 def get_location(latitude, longitude):
     geolocator = Nominatim(user_agent="my-app")
     location = geolocator.reverse((latitude, longitude), exactly_one=True, timeout=None)
     return location.address
-
-# if write_new_files('Planilhas de Dados'):
-#     rename_files('Planilhas de Dados', 'Rotas')
-# else:
-#     print('não')

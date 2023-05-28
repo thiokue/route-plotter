@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_251dc559b27ee82634379f69ef773521 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_251dc559b27ee82634379f69ef773521" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_251dc559b27ee82634379f69ef773521 = L.map(
+                "map_251dc559b27ee82634379f69ef773521",
+                {
+                    center: [-23.577827, -46.64728],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b5caffcc1432f327290f505d5351ad38 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+            var marker_1e8f6428052dae90ef4db267206a20fb = L.marker(
+                [-23.577827, -46.64728],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_697ff04c4fde9efa865317410fe66416 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8856491ab836623c82fdddf24d7ff3e1 = $(`<div id="html_8856491ab836623c82fdddf24d7ff3e1" style="width: 100.0%; height: 100.0%;">Rua Carlos Steinen, Paraíso, Vila Mariana, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04011-002, Brasil</div>`)[0];
+                popup_697ff04c4fde9efa865317410fe66416.setContent(html_8856491ab836623c82fdddf24d7ff3e1);
+            
+        
+
+        marker_1e8f6428052dae90ef4db267206a20fb.bindPopup(popup_697ff04c4fde9efa865317410fe66416)
+        ;
+
+        
+    
+    
+            var marker_b05f77d17745a2883551560712c3d433 = L.marker(
+                [-23.577135, -46.66777],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_3d145e386cae491090f52daaef751855 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a744a4d10e3e6029bfb61d6d3e650ae = $(`<div id="html_2a744a4d10e3e6029bfb61d6d3e650ae" style="width: 100.0%; height: 100.0%;">Rua Antônio Bento, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04502-000, Brasil</div>`)[0];
+                popup_3d145e386cae491090f52daaef751855.setContent(html_2a744a4d10e3e6029bfb61d6d3e650ae);
+            
+        
+
+        marker_b05f77d17745a2883551560712c3d433.bindPopup(popup_3d145e386cae491090f52daaef751855)
+        ;
+
+        
+    
+    
+            var marker_63fd756b70677d58c4d20927f57fed8b = L.marker(
+                [-23.579628, -46.668636],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_cca29fc160c0136d30ee43675891dca4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78768e5088728fa5193b13bab2e6c59e = $(`<div id="html_78768e5088728fa5193b13bab2e6c59e" style="width: 100.0%; height: 100.0%;">366, Rua Groenlândia, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 01434-000, Brasil</div>`)[0];
+                popup_cca29fc160c0136d30ee43675891dca4.setContent(html_78768e5088728fa5193b13bab2e6c59e);
+            
+        
+
+        marker_63fd756b70677d58c4d20927f57fed8b.bindPopup(popup_cca29fc160c0136d30ee43675891dca4)
+        ;
+
+        
+    
+    
+            var marker_c278b55c10411da4e4db70f3d885bfd0 = L.marker(
+                [-23.579742, -46.66961],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_65f0a1b853150164fce591f168a1f192 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb9263296db5c4287192f48afcf0702c = $(`<div id="html_fb9263296db5c4287192f48afcf0702c" style="width: 100.0%; height: 100.0%;">Rua Henrique Martins, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 01435-000, Brasil</div>`)[0];
+                popup_65f0a1b853150164fce591f168a1f192.setContent(html_fb9263296db5c4287192f48afcf0702c);
+            
+        
+
+        marker_c278b55c10411da4e4db70f3d885bfd0.bindPopup(popup_65f0a1b853150164fce591f168a1f192)
+        ;
+
+        
+    
+    
+            var marker_35f9d53a91243a2cb50baa1c069c6070 = L.marker(
+                [-23.57519, -46.676132],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_099d6f3e970ab0462dcf18d3623b7b77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55b9356ea5d9bb3605e5fcd73ea2f767 = $(`<div id="html_55b9356ea5d9bb3605e5fcd73ea2f767" style="width: 100.0%; height: 100.0%;">Rua Espanha, Jardim Europa, Bairro de Pinheiros, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 01446-020, Brasil</div>`)[0];
+                popup_099d6f3e970ab0462dcf18d3623b7b77.setContent(html_55b9356ea5d9bb3605e5fcd73ea2f767);
+            
+        
+
+        marker_35f9d53a91243a2cb50baa1c069c6070.bindPopup(popup_099d6f3e970ab0462dcf18d3623b7b77)
+        ;
+
+        
+    
+    
+            var marker_ccd92f306824b25fc66d87388b4da3ae = L.marker(
+                [-23.566498, -46.67616],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_71aac0cefe0fc3d1b85855d35f99f141 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95f18668f89a85e53624944bc76dff45 = $(`<div id="html_95f18668f89a85e53624944bc76dff45" style="width: 100.0%; height: 100.0%;">2037, Avenida Brasil, Cerqueira César, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 01431-001, Brasil</div>`)[0];
+                popup_71aac0cefe0fc3d1b85855d35f99f141.setContent(html_95f18668f89a85e53624944bc76dff45);
+            
+        
+
+        marker_ccd92f306824b25fc66d87388b4da3ae.bindPopup(popup_71aac0cefe0fc3d1b85855d35f99f141)
+        ;
+
+        
+    
+    
+            var marker_74d11ee29032817aad62c90207f43ff4 = L.marker(
+                [-23.563091, -46.67715],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_5f01b7418c083d8c41f0afc62ce9ffcb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc6b81d6a0afb717bc5d11f469e9e6ce = $(`<div id="html_fc6b81d6a0afb717bc5d11f469e9e6ce" style="width: 100.0%; height: 100.0%;">78, Rua Lisboa, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 05413-000, Brasil</div>`)[0];
+                popup_5f01b7418c083d8c41f0afc62ce9ffcb.setContent(html_fc6b81d6a0afb717bc5d11f469e9e6ce);
+            
+        
+
+        marker_74d11ee29032817aad62c90207f43ff4.bindPopup(popup_5f01b7418c083d8c41f0afc62ce9ffcb)
+        ;
+
+        
+    
+    
+            var marker_224502029d3ae5b05ac039cc36c4e622 = L.marker(
+                [-23.56125, -46.67574],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_0e50da78c48de32afadd5aa014a53eaa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68c9e38011ff99c167f383d33ab57ab5 = $(`<div id="html_68c9e38011ff99c167f383d33ab57ab5" style="width: 100.0%; height: 100.0%;">145, Rua Cristiano Viana, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 05411-000, Brasil</div>`)[0];
+                popup_0e50da78c48de32afadd5aa014a53eaa.setContent(html_68c9e38011ff99c167f383d33ab57ab5);
+            
+        
+
+        marker_224502029d3ae5b05ac039cc36c4e622.bindPopup(popup_0e50da78c48de32afadd5aa014a53eaa)
+        ;
+
+        
+    
+    
+            var marker_1f1321999522bbc69442b4a908c5c59c = L.marker(
+                [-23.559135, -46.674854],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_1588720ad3a37d2827b4c627643497ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a0eb9706f192425e5d1a459cd87f914 = $(`<div id="html_7a0eb9706f192425e5d1a459cd87f914" style="width: 100.0%; height: 100.0%;">Edifício Victoria Plaza, Rua Capote Valente, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 05404-000, Brasil</div>`)[0];
+                popup_1588720ad3a37d2827b4c627643497ab.setContent(html_7a0eb9706f192425e5d1a459cd87f914);
+            
+        
+
+        marker_1f1321999522bbc69442b4a908c5c59c.bindPopup(popup_1588720ad3a37d2827b4c627643497ab)
+        ;
+
+        
+    
+    
+            var marker_39535586d61dc1e04d625f2777265bd6 = L.marker(
+                [-23.554174, -46.67807],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_89a508ca362bf827efd8ee44e97a22cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04b16625f8f810aac76b4e8fdd0e4334 = $(`<div id="html_04b16625f8f810aac76b4e8fdd0e4334" style="width: 100.0%; height: 100.0%;">929, Rua Capote Valente, Jardim Paulista, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 05409-002, Brasil</div>`)[0];
+                popup_89a508ca362bf827efd8ee44e97a22cf.setContent(html_04b16625f8f810aac76b4e8fdd0e4334);
+            
+        
+
+        marker_39535586d61dc1e04d625f2777265bd6.bindPopup(popup_89a508ca362bf827efd8ee44e97a22cf)
+        ;
+
+        
+    
+    
+            var marker_d08b24929dbbe5b311593482e06919bc = L.marker(
+                [-23.530342, -46.681656],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_b615ca578f81f59f158291526b172e1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36f85561a4ae7ca9e60a904925925423 = $(`<div id="html_36f85561a4ae7ca9e60a904925925423" style="width: 100.0%; height: 100.0%;">Edificio la Place Office, 221, Rua Padre Chico, Perdizes, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 05008-010, Brasil</div>`)[0];
+                popup_b615ca578f81f59f158291526b172e1a.setContent(html_36f85561a4ae7ca9e60a904925925423);
+            
+        
+
+        marker_d08b24929dbbe5b311593482e06919bc.bindPopup(popup_b615ca578f81f59f158291526b172e1a)
+        ;
+
+        
+    
+    
+            var marker_8dade3f063340c53da8568636b1b504f = L.marker(
+                [-23.544125, -46.714813],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_79a0e450eca2ac04b719560d20ade46f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_087501be4b51380bc0f7d1db8e14b945 = $(`<div id="html_087501be4b51380bc0f7d1db8e14b945" style="width: 100.0%; height: 100.0%;">Rua Murajuba, Alto de Pinheiros, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 05468-140, Brasil</div>`)[0];
+                popup_79a0e450eca2ac04b719560d20ade46f.setContent(html_087501be4b51380bc0f7d1db8e14b945);
+            
+        
+
+        marker_8dade3f063340c53da8568636b1b504f.bindPopup(popup_79a0e450eca2ac04b719560d20ade46f)
+        ;
+
+        
+    
+    
+            var marker_94c58413328a13acf516f3bd929bcde1 = L.marker(
+                [-23.54194, -46.69804],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_73ff0e19c0739abe3e85505bdd3f3aba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_652056df1a72d3def7fa2ab7174fe80c = $(`<div id="html_652056df1a72d3def7fa2ab7174fe80c" style="width: 100.0%; height: 100.0%;">Rua Araioses, Alto de Pinheiros, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 05061-050, Brasil</div>`)[0];
+                popup_73ff0e19c0739abe3e85505bdd3f3aba.setContent(html_652056df1a72d3def7fa2ab7174fe80c);
+            
+        
+
+        marker_94c58413328a13acf516f3bd929bcde1.bindPopup(popup_73ff0e19c0739abe3e85505bdd3f3aba)
+        ;
+
+        
+    
+    
+            var marker_cd85a754ab75c3fc32c2122a0d40961e = L.marker(
+                [-23.547787, -46.691],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_32420c94cc63787095a22fe18c120d68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d32b4b15a44ed098dbc467ebb11db694 = $(`<div id="html_d32b4b15a44ed098dbc467ebb11db694" style="width: 100.0%; height: 100.0%;">Rua Pedro Ortiz, Sumarezinho, Bairro de Pinheiros, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 05440-000, Brasil</div>`)[0];
+                popup_32420c94cc63787095a22fe18c120d68.setContent(html_d32b4b15a44ed098dbc467ebb11db694);
+            
+        
+
+        marker_cd85a754ab75c3fc32c2122a0d40961e.bindPopup(popup_32420c94cc63787095a22fe18c120d68)
+        ;
+
+        
+    
+    
+            var marker_bbb3d4ba40e5098042f4c6fe13acb2aa = L.marker(
+                [-23.551098, -46.690437],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_873ac6b25ca38dfe92e6c230a6b1c260 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d5c4a3699c4d26072290150419ab190 = $(`<div id="html_6d5c4a3699c4d26072290150419ab190" style="width: 100.0%; height: 100.0%;">161, Rua Rodésia, Vila Madalena, Bairro de Pinheiros, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 05435-020, Brasil</div>`)[0];
+                popup_873ac6b25ca38dfe92e6c230a6b1c260.setContent(html_6d5c4a3699c4d26072290150419ab190);
+            
+        
+
+        marker_bbb3d4ba40e5098042f4c6fe13acb2aa.bindPopup(popup_873ac6b25ca38dfe92e6c230a6b1c260)
+        ;
+
+        
+    
+    
+            var marker_d217f514d6987334e9003692bf514535 = L.marker(
+                [-23.556772, -46.692387],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_50560a9547521e0cd43465f3dd977a80 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_513e217106dd02e052577fb1960e98a9 = $(`<div id="html_513e217106dd02e052577fb1960e98a9" style="width: 100.0%; height: 100.0%;">1325, Rua Mourato Coelho, Pinheiros, Bairro de Pinheiros, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 05417-012, Brasil</div>`)[0];
+                popup_50560a9547521e0cd43465f3dd977a80.setContent(html_513e217106dd02e052577fb1960e98a9);
+            
+        
+
+        marker_d217f514d6987334e9003692bf514535.bindPopup(popup_50560a9547521e0cd43465f3dd977a80)
+        ;
+
+        
+    
+    
+            var marker_00fc889ece2d374e485cc0840a8f04b8 = L.marker(
+                [-23.5527, -46.697723],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_de6abba7fb14aecc9b22fd005e8c75e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d358a030e1f3e1010e41fd7ddf1ee22d = $(`<div id="html_d358a030e1f3e1010e41fd7ddf1ee22d" style="width: 100.0%; height: 100.0%;">58, Rua Ourânia, Alto de Pinheiros, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 05443-001, Brasil</div>`)[0];
+                popup_de6abba7fb14aecc9b22fd005e8c75e9.setContent(html_d358a030e1f3e1010e41fd7ddf1ee22d);
+            
+        
+
+        marker_00fc889ece2d374e485cc0840a8f04b8.bindPopup(popup_de6abba7fb14aecc9b22fd005e8c75e9)
+        ;
+
+        
+    
+    
+            var marker_4efa0065399411d2b116097d420af16a = L.marker(
+                [-23.561123, -46.701786],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_8fa88e47d1f45b5080e4ad9ebd1e3956 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0e3cdb988a6206b635e13308d97ed40 = $(`<div id="html_c0e3cdb988a6206b635e13308d97ed40" style="width: 100.0%; height: 100.0%;">345, Avenida Professor Frederico Herman Júnior, Pinheiros, Bairro de Pinheiros, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 05459-010, Brasil</div>`)[0];
+                popup_8fa88e47d1f45b5080e4ad9ebd1e3956.setContent(html_c0e3cdb988a6206b635e13308d97ed40);
+            
+        
+
+        marker_4efa0065399411d2b116097d420af16a.bindPopup(popup_8fa88e47d1f45b5080e4ad9ebd1e3956)
+        ;
+
+        
+    
+    
+            var marker_0a82495697af88e07e1e35c93db8a7d8 = L.marker(
+                [-23.57545, -46.680325],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_64b2361fe2d8f6af129f8f8d317f85ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6995426ffce8a80d55c6ad6aa6ecf74 = $(`<div id="html_b6995426ffce8a80d55c6ad6aa6ecf74" style="width: 100.0%; height: 100.0%;">Rua Itália, Jardim Europa, Bairro de Pinheiros, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 01449-070, Brasil</div>`)[0];
+                popup_64b2361fe2d8f6af129f8f8d317f85ba.setContent(html_b6995426ffce8a80d55c6ad6aa6ecf74);
+            
+        
+
+        marker_0a82495697af88e07e1e35c93db8a7d8.bindPopup(popup_64b2361fe2d8f6af129f8f8d317f85ba)
+        ;
+
+        
+    
+    
+            var marker_c17c8def9c38c3d73ee55de18318d8a3 = L.marker(
+                [-23.581339, -46.681282],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_39e3e281259ee9174c669cf193b2ba97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b55c5974b9fcf23557bd8ecd8d28e68 = $(`<div id="html_3b55c5974b9fcf23557bd8ecd8d28e68" style="width: 100.0%; height: 100.0%;">Santo Grão Itaim, 179, Rua Jerônimo da Veiga, Itaim Bibi, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04536-050, Brasil</div>`)[0];
+                popup_39e3e281259ee9174c669cf193b2ba97.setContent(html_3b55c5974b9fcf23557bd8ecd8d28e68);
+            
+        
+
+        marker_c17c8def9c38c3d73ee55de18318d8a3.bindPopup(popup_39e3e281259ee9174c669cf193b2ba97)
+        ;
+
+        
+    
+    
+            var marker_5e93c87856468f2d10cde99920c997a4 = L.marker(
+                [-23.590466, -46.68564],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_11598476ebe21a347c8caf5059243cbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbd634dc3a48bc0074199239e97280ac = $(`<div id="html_cbd634dc3a48bc0074199239e97280ac" style="width: 100.0%; height: 100.0%;">São Luiz, Rua Fernandes de Abreu, Itaim Bibi, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04543-011, Brasil</div>`)[0];
+                popup_11598476ebe21a347c8caf5059243cbc.setContent(html_cbd634dc3a48bc0074199239e97280ac);
+            
+        
+
+        marker_5e93c87856468f2d10cde99920c997a4.bindPopup(popup_11598476ebe21a347c8caf5059243cbc)
+        ;
+
+        
+    
+    
+            var marker_65244ae118084c3f14c94c71cbc42db9 = L.marker(
+                [-23.600874, -46.668682],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_5c3065bfa24a573d52f26cbb486b5e14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acb5755d07207d48ea66ec96e00a5a08 = $(`<div id="html_acb5755d07207d48ea66ec96e00a5a08" style="width: 100.0%; height: 100.0%;">128, Avenida Jacutinga, Indianópolis, Moema, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04515-030, Brasil</div>`)[0];
+                popup_5c3065bfa24a573d52f26cbb486b5e14.setContent(html_acb5755d07207d48ea66ec96e00a5a08);
+            
+        
+
+        marker_65244ae118084c3f14c94c71cbc42db9.bindPopup(popup_5c3065bfa24a573d52f26cbb486b5e14)
+        ;
+
+        
+    
+    
+            var marker_2fa77cc5f597a7a8ed6f3e3febd78597 = L.marker(
+                [-23.604734, -46.67254],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_82d6ff872e68b43d494b729138f3e0e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63acf42f1bb1c6eadd62e5fecc5d34b6 = $(`<div id="html_63acf42f1bb1c6eadd62e5fecc5d34b6" style="width: 100.0%; height: 100.0%;">980, Rua Tuim, Indianópolis, Moema, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04514-103, Brasil</div>`)[0];
+                popup_82d6ff872e68b43d494b729138f3e0e5.setContent(html_63acf42f1bb1c6eadd62e5fecc5d34b6);
+            
+        
+
+        marker_2fa77cc5f597a7a8ed6f3e3febd78597.bindPopup(popup_82d6ff872e68b43d494b729138f3e0e5)
+        ;
+
+        
+    
+    
+            var marker_ae9486993e0da2d0f687016b09eeea87 = L.marker(
+                [-23.604721, -46.678394],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_ecbec5fa88a05cffab05c88c2225a747 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ccc442032868547501be60d2fb01764 = $(`<div id="html_8ccc442032868547501be60d2fb01764" style="width: 100.0%; height: 100.0%;">Rua Cabo Verde, Itaim Bibi, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04556-100, Brasil</div>`)[0];
+                popup_ecbec5fa88a05cffab05c88c2225a747.setContent(html_8ccc442032868547501be60d2fb01764);
+            
+        
+
+        marker_ae9486993e0da2d0f687016b09eeea87.bindPopup(popup_ecbec5fa88a05cffab05c88c2225a747)
+        ;
+
+        
+    
+    
+            var marker_0148f3078d3810d4cb98b717b8fea2ba = L.marker(
+                [-23.600797653, -46.686527252],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_6af273becbdf2a0686a4b6f4f4096771 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9f1d0a6b8d85f3c7aa5aa86bfec9ab5 = $(`<div id="html_d9f1d0a6b8d85f3c7aa5aa86bfec9ab5" style="width: 100.0%; height: 100.0%;">Rua Capimirim, Itaim Bibi, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04553-010, Brasil</div>`)[0];
+                popup_6af273becbdf2a0686a4b6f4f4096771.setContent(html_d9f1d0a6b8d85f3c7aa5aa86bfec9ab5);
+            
+        
+
+        marker_0148f3078d3810d4cb98b717b8fea2ba.bindPopup(popup_6af273becbdf2a0686a4b6f4f4096771)
+        ;
+
+        
+    
+    
+            var marker_b3267f5ff7733abac3ac00a3d70c1df5 = L.marker(
+                [-23.61182, -46.688072],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_7d2e5ade07e49f3611921499bb9bc7b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06e637e67d6d73d876ab54a628d55724 = $(`<div id="html_06e637e67d6d73d876ab54a628d55724" style="width: 100.0%; height: 100.0%;">Rua Flórida, Itaim Bibi, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04564-070, Brasil</div>`)[0];
+                popup_7d2e5ade07e49f3611921499bb9bc7b7.setContent(html_06e637e67d6d73d876ab54a628d55724);
+            
+        
+
+        marker_b3267f5ff7733abac3ac00a3d70c1df5.bindPopup(popup_7d2e5ade07e49f3611921499bb9bc7b7)
+        ;
+
+        
+    
+    
+            var marker_6ba1c0d723defa8111dfc952d2f29b8d = L.marker(
+                [-23.616072, -46.68978],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_fc67e79adcd14e5ddbb9214893df25a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2410ed88af582f98b69ba6827f94584 = $(`<div id="html_f2410ed88af582f98b69ba6827f94584" style="width: 100.0%; height: 100.0%;">Rua Bartolomeu Feio, Itaim Bibi, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04556-500, Brasil</div>`)[0];
+                popup_fc67e79adcd14e5ddbb9214893df25a3.setContent(html_f2410ed88af582f98b69ba6827f94584);
+            
+        
+
+        marker_6ba1c0d723defa8111dfc952d2f29b8d.bindPopup(popup_fc67e79adcd14e5ddbb9214893df25a3)
+        ;
+
+        
+    
+    
+            var marker_53f8d9a9b790e524276ced4c19d7d2c1 = L.marker(
+                [-23.621798, -46.677406],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_67512110f6c14cda4cd34274afa53fb5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5250dbb4f15a11b4134864a41d7f8abb = $(`<div id="html_5250dbb4f15a11b4134864a41d7f8abb" style="width: 100.0%; height: 100.0%;">624, Rua Gabrielle D'Annunzio, Campo Belo, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04603-002, Brasil</div>`)[0];
+                popup_67512110f6c14cda4cd34274afa53fb5.setContent(html_5250dbb4f15a11b4134864a41d7f8abb);
+            
+        
+
+        marker_53f8d9a9b790e524276ced4c19d7d2c1.bindPopup(popup_67512110f6c14cda4cd34274afa53fb5)
+        ;
+
+        
+    
+    
+            var marker_779720fe8285275826f995c291564a98 = L.marker(
+                [-23.62136, -46.677433],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_037510f1aa1b2ff831c4991dfd8d65ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eec1a65e7578400a9a9350620a7dcf3d = $(`<div id="html_eec1a65e7578400a9a9350620a7dcf3d" style="width: 100.0%; height: 100.0%;">1057, Rua Constantino de Sousa, Campo Belo, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04603-002, Brasil</div>`)[0];
+                popup_037510f1aa1b2ff831c4991dfd8d65ed.setContent(html_eec1a65e7578400a9a9350620a7dcf3d);
+            
+        
+
+        marker_779720fe8285275826f995c291564a98.bindPopup(popup_037510f1aa1b2ff831c4991dfd8d65ed)
+        ;
+
+        
+    
+    
+            var marker_9bcd3aa03cdaff6b388a2928cf843b77 = L.marker(
+                [-23.617802, -46.67019],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_99c8067fd7557e64cf7d92cc632c3402 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_583b9fc3a41579dba321feed909379c0 = $(`<div id="html_583b9fc3a41579dba321feed909379c0" style="width: 100.0%; height: 100.0%;">Rua Morais de Barros, Campo Belo, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04611-004, Brasil</div>`)[0];
+                popup_99c8067fd7557e64cf7d92cc632c3402.setContent(html_583b9fc3a41579dba321feed909379c0);
+            
+        
+
+        marker_9bcd3aa03cdaff6b388a2928cf843b77.bindPopup(popup_99c8067fd7557e64cf7d92cc632c3402)
+        ;
+
+        
+    
+    
+            var marker_c9f794bf5697008e912bdb8de22244f2 = L.marker(
+                [-23.622505, -46.664062],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_555f8c62d113a7a1480e59d55a5efc91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_286f49915e3286c5b704e1a3d97c4f37 = $(`<div id="html_286f49915e3286c5b704e1a3d97c4f37" style="width: 100.0%; height: 100.0%;">Rua Acruás, Campo Belo, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04613-070, Brasil</div>`)[0];
+                popup_555f8c62d113a7a1480e59d55a5efc91.setContent(html_286f49915e3286c5b704e1a3d97c4f37);
+            
+        
+
+        marker_c9f794bf5697008e912bdb8de22244f2.bindPopup(popup_555f8c62d113a7a1480e59d55a5efc91)
+        ;
+
+        
+    
+    
+            var marker_6304da723132f82d885228d1fa745687 = L.marker(
+                [-23.624462, -46.667225],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_8b557966aeb64af70284572eee1675a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e523b682adbea6fe7bf4da90180d0849 = $(`<div id="html_e523b682adbea6fe7bf4da90180d0849" style="width: 100.0%; height: 100.0%;">1606, Rua Vieira de Morais, Campo Belo, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04617-007, Brasil</div>`)[0];
+                popup_8b557966aeb64af70284572eee1675a1.setContent(html_e523b682adbea6fe7bf4da90180d0849);
+            
+        
+
+        marker_6304da723132f82d885228d1fa745687.bindPopup(popup_8b557966aeb64af70284572eee1675a1)
+        ;
+
+        
+    
+    
+            var marker_ead0d054c0a9d51501ee3573e7bf0859 = L.marker(
+                [-23.624693, -46.670265],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_c2d3a72a7be12eac31af23919b1f1ad4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8618f1b06cc1e283d96bf035c2f9e50 = $(`<div id="html_a8618f1b06cc1e283d96bf035c2f9e50" style="width: 100.0%; height: 100.0%;">Rua João de Sousa Dias, Campo Belo, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04624-090, Brasil</div>`)[0];
+                popup_c2d3a72a7be12eac31af23919b1f1ad4.setContent(html_a8618f1b06cc1e283d96bf035c2f9e50);
+            
+        
+
+        marker_ead0d054c0a9d51501ee3573e7bf0859.bindPopup(popup_c2d3a72a7be12eac31af23919b1f1ad4)
+        ;
+
+        
+    
+    
+            var marker_14a5c7fe53ea413ef356666800a87f2f = L.marker(
+                [-23.630877, -46.692574],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_604b80947f44393b50685ec077f79de8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5057ebc1d48f59b4397fdd72f051c3d9 = $(`<div id="html_5057ebc1d48f59b4397fdd72f051c3d9" style="width: 100.0%; height: 100.0%;">Rua São Sebastião, Santo Amaro, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04709-020, Brasil</div>`)[0];
+                popup_604b80947f44393b50685ec077f79de8.setContent(html_5057ebc1d48f59b4397fdd72f051c3d9);
+            
+        
+
+        marker_14a5c7fe53ea413ef356666800a87f2f.bindPopup(popup_604b80947f44393b50685ec077f79de8)
+        ;
+
+        
+    
+    
+            var marker_1ffa6bbca5f79e3320ccf6e21b7ef77c = L.marker(
+                [-23.638988, -46.695774],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_853f6df8739262710cab80d9f7a50556 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa9cb980b9271cf3a00aa45b3e94fed7 = $(`<div id="html_aa9cb980b9271cf3a00aa45b3e94fed7" style="width: 100.0%; height: 100.0%;">Criare Granja Julieta, 1792;1800, Rua Graham Bell, Santo Amaro, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04734-003, Brasil</div>`)[0];
+                popup_853f6df8739262710cab80d9f7a50556.setContent(html_aa9cb980b9271cf3a00aa45b3e94fed7);
+            
+        
+
+        marker_1ffa6bbca5f79e3320ccf6e21b7ef77c.bindPopup(popup_853f6df8739262710cab80d9f7a50556)
+        ;
+
+        
+    
+    
+            var marker_e2e78fa8eebdb26fa3c1ff28f9e1dc4c = L.marker(
+                [-23.638872, -46.695724],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_c580f6112196c7f939acc409cfc1108c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c02ec6575bf29c034c835bef0a3522a = $(`<div id="html_2c02ec6575bf29c034c835bef0a3522a" style="width: 100.0%; height: 100.0%;">Avenida Vereador José Diniz, Santo Amaro, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04603-000, Brasil</div>`)[0];
+                popup_c580f6112196c7f939acc409cfc1108c.setContent(html_2c02ec6575bf29c034c835bef0a3522a);
+            
+        
+
+        marker_e2e78fa8eebdb26fa3c1ff28f9e1dc4c.bindPopup(popup_c580f6112196c7f939acc409cfc1108c)
+        ;
+
+        
+    
+    
+            var marker_3db2100b645edd27cf1dc313944fd7b3 = L.marker(
+                [-23.642168, -46.701893],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_930411283fe0d240e3ad6f9ab1e1aabf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c507d8af1d062c0a2535076b8490b715 = $(`<div id="html_c507d8af1d062c0a2535076b8490b715" style="width: 100.0%; height: 100.0%;">Rua São Ludgero, Santo Amaro, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04722-000, Brasil</div>`)[0];
+                popup_930411283fe0d240e3ad6f9ab1e1aabf.setContent(html_c507d8af1d062c0a2535076b8490b715);
+            
+        
+
+        marker_3db2100b645edd27cf1dc313944fd7b3.bindPopup(popup_930411283fe0d240e3ad6f9ab1e1aabf)
+        ;
+
+        
+    
+    
+            var marker_040bb43aa7b726a720951d19dd8b4f51 = L.marker(
+                [-23.640938, -46.70009],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_6a6e86b42f9fcb5bc6e682aeb1ef2e1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af62997c0f73e1a46be017f52d1e446e = $(`<div id="html_af62997c0f73e1a46be017f52d1e446e" style="width: 100.0%; height: 100.0%;">72, Rua Madre Rita Amada de Jesus, Santo Amaro, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04721-060, Brasil</div>`)[0];
+                popup_6a6e86b42f9fcb5bc6e682aeb1ef2e1f.setContent(html_af62997c0f73e1a46be017f52d1e446e);
+            
+        
+
+        marker_040bb43aa7b726a720951d19dd8b4f51.bindPopup(popup_6a6e86b42f9fcb5bc6e682aeb1ef2e1f)
+        ;
+
+        
+    
+    
+            var marker_049bf52ecb24529cc692781cdf6922a0 = L.marker(
+                [-23.630491, -46.700012],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_003831428c5a37a60b5255543f0c8f0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e4da5ed8b7dc1739f8a5e0afb83441e = $(`<div id="html_2e4da5ed8b7dc1739f8a5e0afb83441e" style="width: 100.0%; height: 100.0%;">Rua da Paz, Santo Amaro, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04715-004, Brasil</div>`)[0];
+                popup_003831428c5a37a60b5255543f0c8f0b.setContent(html_2e4da5ed8b7dc1739f8a5e0afb83441e);
+            
+        
+
+        marker_049bf52ecb24529cc692781cdf6922a0.bindPopup(popup_003831428c5a37a60b5255543f0c8f0b)
+        ;
+
+        
+    
+    
+            var marker_d3cb4a0406d341577739c49841762a78 = L.marker(
+                [-23.6317, -46.711018],
+                {}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+    
+        var popup_0d9f9237967ee758d75f9ea811477404 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd8c0134cef0097350725b9e4d53667a = $(`<div id="html_cd8c0134cef0097350725b9e4d53667a" style="width: 100.0%; height: 100.0%;">Mercure Hotel, Avenida Cecília Lottenberg, Santo Amaro, São Paulo, Região Imediata de São Paulo, Região Metropolitana de São Paulo, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 04719-002, Brasil</div>`)[0];
+                popup_0d9f9237967ee758d75f9ea811477404.setContent(html_cd8c0134cef0097350725b9e4d53667a);
+            
+        
+
+        marker_d3cb4a0406d341577739c49841762a78.bindPopup(popup_0d9f9237967ee758d75f9ea811477404)
+        ;
+
+        
+    
+    
+            var poly_line_51c2c28b37b5f45581a6ffa6528d57a2 = L.polyline(
+                [[-23.577827, -46.64728], [-23.577135, -46.66777], [-23.579628, -46.668636], [-23.579742, -46.66961], [-23.57519, -46.676132], [-23.566498, -46.67616], [-23.563091, -46.67715], [-23.56125, -46.67574], [-23.559135, -46.674854], [-23.554174, -46.67807], [-23.530342, -46.681656], [-23.544125, -46.714813], [-23.54194, -46.69804], [-23.547787, -46.691], [-23.551098, -46.690437], [-23.556772, -46.692387], [-23.5527, -46.697723], [-23.561123, -46.701786], [-23.57545, -46.680325], [-23.581339, -46.681282], [-23.590466, -46.68564], [-23.600874, -46.668682], [-23.604734, -46.67254], [-23.604721, -46.678394], [-23.600797653, -46.686527252], [-23.61182, -46.688072], [-23.616072, -46.68978], [-23.621798, -46.677406], [-23.62136, -46.677433], [-23.617802, -46.67019], [-23.622505, -46.664062], [-23.624462, -46.667225], [-23.624693, -46.670265], [-23.630877, -46.692574], [-23.638988, -46.695774], [-23.638872, -46.695724], [-23.642168, -46.701893], [-23.640938, -46.70009], [-23.630491, -46.700012], [-23.6317, -46.711018]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_251dc559b27ee82634379f69ef773521);
+        
+</script>
+</html>
